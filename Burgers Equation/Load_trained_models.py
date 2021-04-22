@@ -9,7 +9,7 @@ test_solutions = data['vu']
 solutions_encoder = tf.keras.models.load_model('Encoder_burgers')
 solutions_decoder = tf.keras.models.load_model('Decoder_burgers')
 neural_network = tf.keras.models.load_model('NN_burgers')
-print('models loaded.....')
+print('Models loaded.....')
 
 # Predict the solutions for new parameter values
 encoded_results = neural_network(test_parameters)

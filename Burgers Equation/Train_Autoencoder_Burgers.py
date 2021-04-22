@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 from sklearn.model_selection import  train_test_split
 
 #load data and set hyperparameters
-data =  scipy.io.loadmat('burgers.mat')
+data =  scipy.io.loadmat('burgers_train.mat')
 parameters = data['nu']
 solutions = data['vu']
 solutions, test_solutions, parameters, test_parameters = train_test_split(solutions, parameters, test_size=0.50, shuffle=False)

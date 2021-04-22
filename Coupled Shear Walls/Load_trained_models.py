@@ -13,7 +13,7 @@ p_max= np.load('p_max.npy')
 solutions_encoder = tf.keras.models.load_model('Encoder_shear_wall')
 solutions_decoder = tf.keras.models.load_model('Decoder_shear_wall')
 neural_network = tf.keras.models.load_model('NN_shear_wall')
-print('models loaded....................................')
+print('Models loaded....................................')
 test_data = scipy.io.loadmat('data_test.mat')
 test_parameters = test_data['batchInputRandomParameters']
 test_parameters = (test_parameters - p_min) / (p_max - p_min)
@@ -26,8 +26,8 @@ del test_data
 start_time = time.time()
 encoded_results = neural_network(test_parameters)
 surrogate_results = s_abs_max * solutions_decoder(encoded_results)
-end_time = time.time() - start_time
-print('Surrogate model time: ',   end_time, ' sec')
+computational_cost = time.time() - start_time
+print('Surrogate model computational cost for predicting', N_test_samples, 'test samples: ',   computational_cost, 'sec')
 error_tot = 0
 for sample in range(N_test_samples):
     error_tot = error_tot + (1/N_test_samples) * (np.linalg.norm(test_solutions[sample,:,:]  - surrogate_results[sample,:,:], 2 ) / np.linalg.norm(test_solutions[sample,:,:], 2 ))

@@ -24,7 +24,7 @@ test_solutions = solutions[500:600,:,:]
 test_parameters = parameters[500:600,:]
 solutions = solutions[0:500,:,:]
 parameters = parameters[0:500,:]
-latent_dimension = 64
+latent_space_dimension = 64
 hidden_size = 256
 epochs = 20000
 batch_size = 100
@@ -51,7 +51,7 @@ hidden_layer_3 = tf.keras.layers.Dense(hidden_size, activation = 'relu')(hidden_
 hidden_layer_4 = tf.keras.layers.Dense(hidden_size, activation = 'relu')(hidden_layer_3)
 hidden_layer_5 = tf.keras.layers.Dense(hidden_size, activation = 'relu')(hidden_layer_4)
 hidden_layer_6 = tf.keras.layers.Dense(hidden_size, activation = 'relu')(hidden_layer_5)
-output = tf.keras.layers.Dense(latent_dimension)(hidden_layer_6)
+output = tf.keras.layers.Dense(latent_space_dimension)(hidden_layer_6)
 neural_network =  tf.keras.Model(input, output)
 neural_network.compile(optimizer= tf.keras.optimizers.Adam(learning_rate = learning_rate), loss='mse')
 NN_input = parameters

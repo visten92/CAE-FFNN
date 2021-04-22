@@ -4,6 +4,8 @@ This work presents  a non-intrusive surrogate modeling scheme based on machine l
 
 * Stefanos Nikolopoulos, Ioannis Kalogeris, Vissarion Papadopoulos ["Non-intrusive surrogate modeling for parametrized time-dependent PDEs using Convolutional Autoencoders"](https://arxiv.org/abs/2101.05555) arXiv preprint arXiv:2101.05555 (2021)
 
+* Link to download the datasets: https://drive.google.com/drive/folders/1uHODdUYDosjCSPZ3EuapqNtJLNIbS__W
+
 ## Citation
 
       @misc{nikolopoulos2021nonintrusive,

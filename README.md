@@ -19,5 +19,5 @@ This work presents  a non-intrusive surrogate modeling scheme based on Machine L
       issn = {0952-1976},
       doi = {https://doi.org/10.1016/j.engappai.2021.104652},
       url = {https://www.sciencedirect.com/science/article/pii/S0952197621004541},
-      author = {Stefanos Nikolopoulos and Ioannis Kalogeris and Vissarion Papadopoulos},
+      author = {Stefanos Nikolopoulos and Ioannis Kalogeris and Vissarion Papadopoulos}
       }

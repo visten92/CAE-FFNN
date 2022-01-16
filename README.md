@@ -1,4 +1,4 @@
-# Non-intrusive Surrogate Modeling for Parametrized Time-Dependent PDEs using Convolutional Autoencoders
+# Non-intrusive surrogate modeling for parametrized time-dependent partial differential equations using Convolutional Autoencoders
 
 ![Slide1](https://user-images.githubusercontent.com/15322711/136744148-96d37d6f-5350-4deb-a219-b21d1c73fa6a.jpg)
 

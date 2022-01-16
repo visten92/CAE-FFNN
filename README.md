@@ -6,7 +6,7 @@ This work presents  a non-intrusive surrogate modeling scheme based on Machine L
 
 * Stefanos Nikolopoulos, Ioannis Kalogeris, Vissarion Papadopoulos ["Non-intrusive surrogate modeling for parametrized time-dependent partial differential equations using convolutional autoencoders"] (https://www.sciencedirect.com/science/article/abs/pii/S0952197621004541?via%3Dihub) 
 
-* Link to download the datasets: https://drive.google.com/drive/folders/1uHODdUYDosjCSPZ3EuapqNtJLNIbSW
+* Link to download the datasets: https://drive.google.com/drive/folders/1uHODdUYDosjCSPZ3EuapqNtJLNIbS__W
 
 ## Citation
 
